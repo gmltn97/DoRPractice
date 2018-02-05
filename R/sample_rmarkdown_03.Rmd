@@ -1,0 +1,11 @@
+---
+title: "sample_rmarkdown_03"
+output: html_document
+---
+
+```{r}
+summary(cars)
+
+library(ggplot2)
+qplot(data = mpg, x = drv, fill = drv)
+```
