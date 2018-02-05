@@ -1,0 +1,27 @@
+---
+title: "sample_rmarkdown_02"
+output: html_document
+---
+
+```{r}
+summary(cars)
+
+library(ggplot2)
+qplot(data = mpg, x = drv, fill = drv)
+```
+
+문자 앞뒤에 *특수문자*를 넣으면 기울임체가 됩니다.
+
+문자 앞뒤에 **특수문자**를 넣으면 강조체가 됩니다.
+
+문자 앞뒤에 ~~특수문자~~를 넣으면 취소선을 만듭니다.
+
+문자 앞뒤에 [특수문자](http://www.google.com/search?q=special+character)를 넣으면 하이퍼링크를 만듭니다.
+
+# 1단계 제목
+## 2단계 제목
+### 3단계 제목
+#### 4단계 제목
+
+데이터 앞부분 일부를 출력하려면 `head()`를 이용하면 됩니다. `tail()`은 데이터 뒷부분 일부를 출력하는 기능을 합니다.
+
